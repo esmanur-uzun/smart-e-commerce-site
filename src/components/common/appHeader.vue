@@ -34,7 +34,7 @@
                   >
                     <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
-                      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                      d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
                     />
                   </svg>
                   <span>Giriş Yap</span>
@@ -193,59 +193,132 @@
       </div>
     </nav>
     <div class="menu-toggle">
-      <button
-        class="btn"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1em"
-          viewBox="0 0 448 512"
-        >
-          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-          <path
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-          />
-        </svg>
-      </button>
-
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
           <div>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
             <button
-              class="btn btn-secondary dropdown-toggle"
+              class="btn"
               type="button"
-              data-bs-toggle="dropdown"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
             >
-              Dropdown button
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1.5em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <div
+                    class="logo-container d-flex align-items-center col-lg-3"
+                  >
+                    <span class="logo">Smart</span>
+                    <span class="logo">Shop</span>
+                  </div>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="search d-flex align-items-center col-lg-4">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Aradığınız ürünü yazınız..."
+                      aria-label="Aradığınız ürünü yazınız..."
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-search"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Button
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  Some text as placeholder. In real life you can have the
+                  elements you have chosen. Like, text, images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <div>
+            <div class="logo-container d-flex align-items-center col-lg-3">
+              <span class="logo">Smart</span>
+              <span class="logo">Shop</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="d-flex">
+            <li>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -267,28 +340,16 @@ $brand-font: "Abril Fatface";
   box-sizing: border-box;
 }
 .brand {
-  .logo-container {
-    font-size: 2.5em;
-    .logo:nth-child(1) {
-      color: $brand-color;
-      font-family: $brand-font;
-    }
-    .logo:nth-child(2) {
-      color: $brand-color2;
-      font-family: $brand-font;
-    }
-  }
   .search {
     height: 80px;
-    .btn-search {
-      color: #fff;
-      background-color: $btn-color;
-      border-radius: 0px !important;
-    }
   }
   .choice {
     height: 60px;
+    ul {
+      list-style: none;
+    }
     ul li a {
+      text-decoration: none;
       color: black;
       padding: 0px 10px !important;
       svg {
@@ -307,9 +368,6 @@ $brand-font: "Abril Fatface";
     .search {
       display: none !important;
     }
-    .logo-container {
-      font-size: 2em;
-    }
   }
 }
 .main-menu {
@@ -317,67 +375,95 @@ $brand-font: "Abril Fatface";
   height: 7vh;
   display: flex;
   align-items: center;
-}
-ul {
-  list-style: none;
+  ul {
+    list-style: none;
 
-  li {
-    display: inline-block;
-    position: relative;
-    a {
-      color: #fff;
-      display: block;
-      padding: 5px 25px;
-      text-decoration: none;
-      text-align: center;
-      svg {
-        fill: #fff;
-      }
-      &:hover {
-        color: $brand-color;
-        &::after {
-          position: absolute;
-          content: "";
-          left: 0;
-          bottom:0;
-          width: 100%;
-          height: 2px;
-          background: $brand-color;
-        }
-        svg{
-          fill: $brand-color;
-        }
-      }
-    }
-    .dropmenu {
-      margin-top: 15px;
-      background-color: #fff;
-      width: 100%;
-      position: absolute;
-      z-index: 999;
-      display: none;
-      li {
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        color: #fff;
         display: block;
-        a {
-          
-          color: black !important;
+        padding: 5px 25px;
+        text-decoration: none;
+        text-align: center;
+        svg {
+          fill: #fff;
+        }
+        &:hover {
+          color: $brand-color;
+          &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: $brand-color;
+          }
+          svg {
+            fill: $brand-color;
+          }
         }
       }
-    }
-    &:hover .dropmenu {
-      display: block;
+      .dropmenu {
+        margin-top: 15px;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        li {
+          display: block;
+          a {
+            color: black !important;
+          }
+        }
+      }
+      &:hover .dropmenu {
+        display: block;
+      }
     }
   }
 }
+
 .menu-toggle {
   display: none;
+  ul {
+    list-style: none;
+    li {
+      padding: 10px;
+    }
+  }
+}
+.btn-search {
+  color: #fff;
+  background-color: $btn-color;
+  border-radius: 0px !important;
+}
+.logo-container {
+  font-size: 2.5em;
+  .logo:nth-child(1) {
+    color: $brand-color;
+    font-family: $brand-font;
+  }
+  .logo:nth-child(2) {
+    color: $brand-color2;
+    font-family: $brand-font;
+  }
 }
 @media (max-width: 768px) {
   .main-menu {
     display: none;
   }
+  .brand {
+    display: none;
+  }
   .menu-toggle {
-    display: block;
+    display: block !important;
+    .logo-container {
+      font-size: 1.5em;
+    }
   }
 }
 </style>
