@@ -363,7 +363,7 @@ export default {};
 <style lang="scss" scoped>
 $brand-color: #ffb703;
 $brand-color2: #1e6091;
-$btn-color: #2a9d8f;
+$btn-color: #003249;
 $brand-font: "Abril Fatface";
 * {
   padding: 0;
