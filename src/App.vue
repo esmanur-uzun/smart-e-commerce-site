@@ -1,8 +1,9 @@
 <script>
 import AppFooter from './components/common/appFooter.vue'
 import appHeader from "./components/common/appHeader.vue"
+import MainPage from './views/MainPage.vue'
 export default{
-    components: { appHeader, AppFooter }
+    components: { appHeader, AppFooter, MainPage }
 
 }
 
@@ -10,8 +11,9 @@ export default{
 
 <template>
   <div>
-    <app-header></app-header>
-    <app-footer></app-footer>
+    <!-- <app-header></app-header>
+    <app-footer></app-footer> -->
+    <main-page></main-page>
   </div>
 </template>
 
