@@ -1,4 +1,6 @@
-<script></script>
+<script>
+export default{}
+</script>
 <template>
   <div class="container-fluid footer-area d-flex  align-items-center">
     <div class="container">

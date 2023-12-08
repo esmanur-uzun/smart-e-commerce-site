@@ -173,7 +173,7 @@ export default {
       </div>
       <div class="container m_100">
         <div class="row advert advert-1">
-          <div class=" col-lg-10  d-flex justify-content-end align-items-center">
+          <div class=" col-lg-10 col-12  d-flex justify-content-end align-items-center">
             <a href="">Ürünleri Gör</a>
           </div>
         </div>
@@ -229,7 +229,7 @@ h2 {
 .advert {
   height: 70vh;
   background-image: url("../assets/medias/photos/newphoto.webp");
-  background-position: center;
+  background-position: 50% 50%; 
   background-repeat: no-repeat;
   a{
     padding: 30px 50px;
@@ -248,5 +248,10 @@ h2 {
 }
 .advert-1{
   background-image: url("../assets/medias/photos/32952191117865301050.webp");
+}
+@media (max-width:768) {
+  .advert{
+    background-position: 80% 80%;
+  }
 }
 </style>
