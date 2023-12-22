@@ -428,6 +428,9 @@ $brand-font: "Abril Fatface";
   
   .search {
     height: 80px;
+    input{
+      padding:10px ;
+    }
   }
   .choice {
     height: 60px;
@@ -538,7 +541,6 @@ $brand-font: "Abril Fatface";
 .btn-search {
   color: #fff;
   background-color: $btn-color;
-  border-radius: 0px !important;
 }
 .logo-container {
   font-size: 2.5em;
