@@ -17,7 +17,16 @@
                 aria-describedby="button-addon2"
               />
               <button class="btn btn-search" type="button" id="button-addon2">
-                Button
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -26,7 +35,7 @@
           >
             <ul class="d-flex">
               <li>
-                <router-link :to="{name:'Login'}">
+                <router-link :to="{ name: 'Login' }">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -41,7 +50,7 @@
                 </router-link>
               </li>
               <li>
-                <router-link :to="{name:'Cart'}">
+                <router-link :to="{ name: 'Cart' }">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -54,7 +63,6 @@
                   </svg>
                   Sepetim
                 </router-link>
-                
               </li>
             </ul>
           </div>
@@ -65,7 +73,7 @@
       <div class="container d-flex justify-content-around">
         <ul class="main-list">
           <li>
-            <router-link :to="{name: 'Product'}">
+            <router-link :to="{ name: 'Product' }">
               Kadın
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -426,11 +434,10 @@ $brand-font: "Abril Fatface";
   box-sizing: border-box;
 }
 .brand {
-  
   .search {
     height: 80px;
-    input{
-      padding:10px ;
+    input {
+      padding: 10px;
     }
   }
   .choice {
@@ -496,7 +503,7 @@ $brand-font: "Abril Fatface";
           }
         }
       }
-     
+
       .dropmenu {
         background-color: #fff;
         width: 100%;
@@ -509,12 +516,9 @@ $brand-font: "Abril Fatface";
             color: black !important;
           }
         }
-
       }
       &:hover .dropmenu {
         display: block;
-        
-        
       }
     }
   }
@@ -542,6 +546,10 @@ $brand-font: "Abril Fatface";
 .btn-search {
   color: #fff;
   background-color: $btn-color;
+  padding: 10px;
+  svg{
+    fill: #fff;
+  }
 }
 .logo-container {
   font-size: 2.5em;
