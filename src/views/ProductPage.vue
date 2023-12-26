@@ -10,7 +10,7 @@ export default {
   <div class="container">
     <app-header></app-header>
     <div class="row d-flex justify-content-center">
-      <div class="col-lg-3 mt-5 d">
+      <div class="col-lg-3 mt-5 ">
         İlgili Kategoriler
         <hr />
         <div class="brand">
@@ -77,8 +77,10 @@ export default {
         </div>
       </div>
       <div class="col-lg-9 row">
-        <div v-for="i in 20" :key="i" class="col-lg-4 mb-4 mt-5">
-          <product-card></product-card>
+        <div v-for="i in 20" :key="i" class="col-lg-4  mb-4 mt-5">
+          <router-link class="products" :to="{name: 'ProductDetail'}">
+            <product-card></product-card>
+          </router-link>
         </div>
       </div>
     </div>
@@ -86,7 +88,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.d {
-  background-color: red;
+.products{
+  text-decoration: none;
 }
 </style>
