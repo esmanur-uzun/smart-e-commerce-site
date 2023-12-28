@@ -4,8 +4,10 @@
       <div class="row">
         <div class="d-flex justify-content-around">
           <div class="logo-container d-flex align-items-center col-lg-3">
-            <span class="logo">Smart</span>
-            <span class="logo">Shop</span>
+            <router-link class="text-decoration-none" :to="{ name: 'MainPage' }">
+              <span class="logo">Smart</span>
+              <span class="logo">Shop</span>
+            </router-link>
           </div>
           <div class="search d-flex align-items-center col-lg-4">
             <div class="input-group mb-3">
@@ -547,7 +549,7 @@ $brand-font: "Abril Fatface";
   color: #fff;
   background-color: $btn-color;
   padding: 10px;
-  svg{
+  svg {
     fill: #fff;
   }
 }

@@ -1,5 +1,5 @@
 <script>
-import AppFooter from '../components/common/appFooter.vue';
+import AppFooter from "../components/common/appFooter.vue";
 import appHeader from "../components/common/appHeader.vue";
 import ProductCard from "../components/common/productCard.vue";
 export default {
@@ -88,9 +88,11 @@ export default {
               </li>
             </ul>
           </div>
-          <button type="button" class="btn cart-check-btn btn-lg">
-            Sepeti Onayla
-          </button>
+          <router-link :to="{ name: 'PayAccount' }">
+            <button type="button" class="btn cart-check-btn btn-lg">
+              Sepeti Onayla
+            </button>
+          </router-link>
         </div>
       </div>
       <div class="mt-5 row">
@@ -99,7 +101,6 @@ export default {
           <product-card></product-card>
         </div>
       </div>
-      
     </div>
     <app-footer></app-footer>
   </div>
