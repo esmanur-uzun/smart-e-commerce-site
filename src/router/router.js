@@ -41,6 +41,16 @@ const routes= [
         name:"CreditCard",
         path: "/creditCard",
         component : () => import("../views/CreditCard.vue")
+    },
+    {
+        name:"SallerPage",
+        path: "/sallerPage",
+        component : () => import("../saller/SallerPage.vue")
+    },
+    {
+        name:"AddProduct",
+        path: "/addProduct",
+        component : () => import("../saller/AddProduct.vue")
     }
 ]
 
