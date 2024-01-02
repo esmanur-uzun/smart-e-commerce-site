@@ -107,6 +107,6 @@ $font: "Abril Fatface";
 .content {
   flex-grow: 1;
   padding: 16px;
-  margin-left: 200px; /* Sidebar genişliği kadar sola kaydır */
+  margin-left: 200px; 
 }
 </style>
